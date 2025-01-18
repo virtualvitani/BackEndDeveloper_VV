@@ -1,0 +1,420 @@
+1. Koja je svrha kontrole verzija u razvoju softvera?
+Pratiti promjene koda tijekom vremena  
+Dijeljenje koda s drugima  
+Suradnja na kodu s drugima  
+x Sve navedeno  
+
+
+2. Koja se naredba koristi za pregled sadržaja datoteke u Linuxu?
+rm  
+mkdir  
+touch  
+x cat  
+
+
+3. Koja se direktiva koristi u datoteci httpd.conf za određivanje korijenskog web direktorija?
+x DocumentRoot  
+WebRoot  
+SiteRoot  
+RootDirectory  
+
+
+4. Za rješavanje zadatka, preuzmite upute i slijedite korake opisane u dokumentu. Potrebno je pokrenuti Hyper-V Manager i spojiti se na virtualnu mašinu.
+
+
+1. U praznom direktoriju kreirajte datoteku index.php te dodajte jednu echo liniju.
+2. Koristeći Git, inicijalizirajte repozitorij, te dodajte datoteku u staging area.
+3. Zatim napravite "commit" s porukom "Initial commit".
+4. Nakon toga kreirajte novu granu naziva feature-add-another-echo te se prebacite na tu granu.
+5. Dodajte jos jednu echo liniju u index.php, zatim napravite "commit".
+6. Za kraj sjedinite ("merge") feature-add-another-echo u prvotnu master granu.
+
+
+Unesi odgovor
+
+
+
+
+
+
+5. Koja je ispravna sintaksa za pokretanje PHP skripte?
+<?  
+x <?php  
+<script>  
+<php>  
+
+
+6. Kako se briše kolačić u PHP-u?
+x setcookie("ime", "", time()-3600);  
+unset_cookie("ime");  
+delete_cookie("ime");  
+destroy_cookie("ime");  
+
+
+7. Što se događa kada proslijedite argument referencom na funkciju u PHP-u?
+Kopija originalne varijable prosljeđuje se funkciji, a originalna varijabla nije modificirana.  
+x Izvorna varijabla je modificirana funkcijom.  
+Funkcija generira pogrešku jer prosljeđivanje po referenci nije dopušteno u PHP-u.  
+Funkcija generira upozorenje jer se prosljeđivanje po referenci ne preporučuje u PHP-u.  
+
+
+8. Napišite funkciju koju ćete koristiti kako biste dodali element na kraj niza u PHP-u.
+U PHP-u možete dodati element na kraj niza koristeći ugrađenu funkciju array_push()
+
+
+9. Koje su dvije najčešće metode koje se koriste za slanje podataka iz web forme na server? Navedite ih i kratko objasnite razliku.
+1. GET metoda
+Opis: Podaci iz forme se šalju kao dio URL-a.
+2. POST metoda
+Opis: Podaci iz forme se šalju u tijelu HTTP zahtjeva, a ne kao dio URL-a.
+10. Kreirajte jednostavnu HTML formu za prijavu korisnika koja sadrži dva polja: jedno za korisničko ime i drugo za lozinku te gumb za slanje forme. Forma treba poslati podatke metodom POST na URL "http://example.com/login".
+
+
+Za kreiranje HTML forme možete koristiti Visual Studio Code. Gotovu HTML formu upisati u kućicu za odgovor.
+
+
+Unesi odgovor
+
+
+11. Koji zapis kardinalnosti znači "jedan i samo jedan"?
+1:N  
+N:M  
+x 1:1  
+Ništa od navedenog.  
+
+
+12. Ako želite ograničiti pristup korisnika 'ivan' samo za čitanje na bazi podataka 'Prodaja', koju naredbu trebate koristiti?
+x GRANT SELECT ON Prodaja.* TO 'ivan'@'localhost';  
+GRANT ALL ON Prodaja.* TO 'ivan'@'localhost';  
+GRANT WRITE ON Prodaja.* TO 'ivan'@'localhost';  
+GRANT READ ON Prodaja.* TO 'ivan'@'localhost';  
+
+
+13. Što je transakcija u MySQL-u?
+x Niz jedne ili više SQL naredbi koje se izvode kao jedna jedinica rada.  
+Jedna SQL naredba izvršena na MySQL bazi podataka.  
+Radnja jednog korisnika koja mijenja podatke u MySQL bazi podataka.  
+Grupa povezanih MySQL baza podataka.  
+
+
+14. Što je normalizacija u kontekstu MySQL-a?
+Način poboljšanja korisničkog iskustva.  
+Način optimiziranja performansi baze podataka.  
+x Način smanjenja redundantnosti i poboljšanja integriteta podataka.  
+Ništa od navedenog.  
+
+
+15. Prevedite prikazani dijagram entitena i veza u relacijske sheme.
+Kako bismo preveli dijagram entiteta i veza (ER dijagram) u relacijske sheme, potrebno je slijediti nekoliko koraka. Opišite dijagram (ili ključne komponente) koji želite prevesti, ili podjelite konkretne detalje o entitetima, atributima i vezama (npr. kardinalnost, tip veze).
+Uputstvo za generiranje relacijskih shema:
+Entiteti:
+Svaki entitet postaje tabela.
+Primarni ključ entiteta postaje primarni ključ tabele.
+Atributi entiteta postaju kolone u tabeli.
+
+
+Relacije (veze):
+Za 1:N veze:
+Primarni ključ entiteta na "1" strani veze se dodaje kao strani ključ u tabelu entiteta na "N" strani.
+
+
+Za M:N veze:
+Kreira se nova tabela koja sadrži primarne ključeve oba povezana entiteta kao strane ključeve (često zajedno čineći složeni primarni ključ).
+
+
+Za 1:1 veze:
+Primarni ključ jednog entiteta može se dodati u drugi entitet kao strani ključ (u zavisnosti od semantičkog značenja).
+
+
+Atributi veze:
+Ako veza ima svoje atribute, oni se dodaju u tabelu koja predstavlja tu vezu.
+
+
+16. Za rješavanje zadatka, preuzmite upute i slijedite korake opisane u dokumentu. Potrebno je pokrenuti Hyper-V Manager i spojiti se na virtualnu mašinu.
+
+
+1. Kreirajte tablicu koja sprema IBAN tekućeg računa te stanje računa.
+2. Napišite transakciju koja prebacuje određeni iznos s jednog računa na drugi račun. Ako je iznos koji se treba prebaciti veći od stanja računa pošiljatelja, transakcija se mora vratiti na početno stanje.
+3. Napišite pohranjenu proceduru koja prima dva IBAN-a (jedan za pošiljatelja i jedan za primatelja) i iznos koji treba prebaciti.
+4. Također, napišite SQL funkciju koja prima IBAN računa i vraća trenutno stanje računa.
+
+
+Rješenje zadatka je potrebno upisati u kućicu za odgovor.
+
+
+Predviđeno vrijeme za rješavanje zadatka je 20 minuta. Spomenuto vrijeme neka Vam služi kao orijentir kako biste bili sigurni da ćete imati dovoljno vremena za ovaj, ali i za ostale zadatke.
+
+
+Preuzmi upute
+
+
+Unesi odgovor
+
+
+ 17. Opišite na koji način biste proveli završno testiranje projekta.
+Završno testiranje projekta ključan je korak koji osigurava da su svi aspekti projekta ispravno implementirani, da zadovoljavaju specifikacije i da su spremni za produkciju. Evo kako bi se taj proces mogao provesti:
+
+1. Planiranje završnog testiranja
+Definisanje ciljeva:
+Proveriti da li projekt zadovoljava sve funkcionalne i nefunkcionalne zahteve.
+Osigurati da je sistem stabilan i spreman za produkciju.
+Priprema testnih slučajeva:
+Koristiti zahteve i specifikacije projekta za kreiranje testnih scenarija.
+Fokusirati se na krajnje korisničke scenarije i poslovne procese.
+
+2. Tipovi testiranja u završnoj fazi
+a) Funkcionalno testiranje
+Provera da li sve funkcionalnosti rade prema specifikacijama.
+Pokrivanje svih mogućih korisničkih scenarija.
+b) Integracijsko testiranje
+Provera interoperabilnosti među različitim komponentama sistema.
+Testiranje komunikacije s vanjskim sistemima (API-jevi, baze podataka, treće strane).
+c) Sistemsko testiranje
+Celokupna provera rada sistema kao jedne celine u realnim uslovima.
+d) Regresiono testiranje
+Osiguranje da nove izmene ili dodaci nisu uzrokovali probleme u prethodno ispravnim delovima sistema.
+e) Testiranje performansi
+Provera brzine, skalabilnosti i stabilnosti sistema pod različitim opterećenjima.
+f) Sigurnosno testiranje
+Identifikovanje i otklanjanje sigurnosnih ranjivosti.
+Testiranje autentičnosti, autorizacije, enkripcije i zaštite podataka.
+g) Korisničko prihvatanje (UAT)
+Krajnji korisnici testiraju sistem kako bi potvrdili da zadovoljava njihove potrebe.
+
+3. Izvršavanje testiranja
+Postavljanje testnog okruženja:
+Kreirati okruženje koje je što sličnije produkcijskom.
+Izvođenje testnih scenarija:
+Dokumentovati svaki korak, ulazne podatke i očekivane rezultate.
+Beležiti stvarne rezultate i odstupanja (defekte).
+Praćenje defekata:
+Koristiti alate za praćenje grešaka (npr. JIRA, Bugzilla) za identifikaciju i rešavanje problema.
+
+4. Evaluacija i izveštavanje
+Analiza rezultata testiranja:
+Identifikovati ključne probleme i njihove uzroke.
+Procijeniti preostale rizike.
+Generisanje završnog izveštaja:
+Sumarizovati rezultate svih testova.
+Navesti preostale poznate greške i predložiti preporuke.
+
+5. Priprema za produkciju
+Validacija spremnosti:
+Proveriti da su svi kritični problemi rešeni.
+Uveriti se da svi učesnici (korisnici, menadžeri) odobravaju prelazak u produkciju.
+Rezervni plan:
+Imati pripremljen plan povratka u prethodno stanje u slučaju nepredviđenih problema.
+
+6. Praktični saveti za uspešno završno testiranje
+Uključiti relevantne strane (korisnici, QA tim, menadžment) u proces.
+Postaviti jasne kriterijume za prihvatanje pre produkcije.
+Komunicirati rezultate i odluke jasno svim zainteresovanim stranama.
+Završno testiranje treba da obezbedi visok nivo poverenja u kvalitet projekta pre njegovog lansiranja.
+
+
+18. Definirajte u koracima kako biste lokalnu bazu podataka prenijeli na udaljeni poslužitelj.
+Prenošenje lokalne baze podataka na udaljeni poslužitelj može se obaviti u nekoliko koraka. Evo detaljnog vodiča:
+
+1. Priprema baze podataka
+Provjerite verziju baze podataka:
+Uverite se da su lokalna i udaljena baza iste vrste (npr. MySQL, PostgreSQL) i verzije, kako biste izbegli probleme s kompatibilnošću.
+Sigurnosna kopija (backup):
+Napravite sigurnosnu kopiju lokalne baze kako biste osigurali da imate rezervu u slučaju problema.
+
+2. Izvoz baze podataka
+Generirajte dump lokalne baze podataka:
+Koristite odgovarajući alat za kreiranje dump fajla baze.
+3. Prijenos dump datoteke na udaljeni poslužitelj
+Koristite SCP (Secure Copy Protocol)
+4. Kreiranje baze na udaljenom poslužitelju
+Prijavite se na udaljeni poslužitelj:
+5. Uvoz baze na udaljeni poslužitelj
+Prenesite dump u udaljenu bazu:
+6. Testiranje i validacija
+Proverite podatke u udaljenoj bazi:
+7. Održavanje
+Automatsko bekapovanje:
+Postavite automatizovane procese za redovno bekapovanje baze sa udaljenog poslužitelja (npr. cron job).
+Sigurnosne postavke:
+Ograničite pristup udaljenoj bazi i koristite jake lozinke.
+19. Definirajte u koracima kako registrirati novu domenu te kako tu domenu povezati sa hosting uslugom.
+
+
+Ukratko opišite kako biste prenijeli svoj projekt na hosting poslužitelj
+
+
+Molimo uključite detaljne korake za svaki dio procesa.
+
+
+1. Registracija nove domene
+a) Odaberite registar domena
+Izaberite pouzdanog registra domena (npr. GoDaddy, Namecheap, Hover, Bluehost).
+Osigurajte da registar podržava vrstu domene koju želite (npr. .com, .net, .hr).
+b) Proverite dostupnost domene
+Upotrebite alat na stranici registra kako biste proverili da li je željena domena dostupna.
+Ako nije dostupna, razmotrite alternative (npr. druga ekstenzija ili malo drugačije ime).
+c) Registrujte domen
+Kreirajte nalog na web stranici registra.
+Unesite potrebne informacije (ime domene, lične ili poslovne podatke).
+Izvršite plaćanje:
+Odaberite period registracije (obično 1–10 godina).
+Opcionalno dodajte usluge poput privatnosti domena (skrivanje vaših podataka u WHOIS bazi).
+
+2. Kupovina hosting usluge
+a) Odaberite pružatelja hostinga
+Izaberite hosting uslugu koja odgovara vašim potrebama (npr. deljeni hosting, VPS, cloud hosting).
+Popularni pružatelji: SiteGround, HostGator, Bluehost, DigitalOcean.
+b) Kupovina hosting paketa
+Kreirajte nalog kod pružatelja hostinga.
+Odaberite paket koji odgovara vašoj aplikaciji (npr. veličina prostora, propusni opseg, podrška za baze podataka).
+
+3. Povezivanje domene s hostingom
+a) Pristupite DNS postavkama domene
+Prijavite se u kontrolni panel registra domena.
+Pronađite sekciju za upravljanje DNS postavkama (obično nazvana "DNS settings" ili "Name Servers").
+b) Dodajte name servere hostinga
+Pronađite name servere koje je obezbedio vaš hosting pružatelj (npr. ns1.provider.com, ns2.provider.com).
+Ažurirajte DNS postavke domene dodavanjem tih name servera.
+c) Provera DNS propagacije
+Sačekajte da se DNS propagira (obično traje 24–48 sati).
+Proverite status propagacije koristeći alate poput whatsmydns.net.
+
+4. Postavljanje hostinga
+a) Pristupite kontrolnom panelu hostinga
+Prijavite se na cPanel, Plesk ili drugi kontrolni panel vašeg hostinga.
+Dodajte domenu u sekciju za "Addon Domains" ili "Manage Domains".
+b) Postavite datoteke web stranice
+Prenesite datoteke vaše web stranice u odgovarajući direktorijum (npr. /public_html).
+Ako koristite CMS (npr. WordPress), instalirajte ga kroz hosting kontrolni panel.
+
+5. Testiranje
+Otvorite preglednik i unesite ime domene.
+Proverite da li se vaša web stranica ispravno prikazuje.
+
+6. Dodatni koraci (opcionalno)
+Postavite SSL certifikat:
+Većina hosting usluga omogućava besplatne SSL certifikate putem Let's Encrypt.
+Konfigurišite e-mail usluge:
+Ako želite e-mailove na vašoj domeni (npr. ime@vasa-domena.com), postavite MX zapise prema uputama hostinga.
+
+
+20. Što je objekt u PHP-u?
+Skup podataka i metoda.  
+Varijabla.  
+Funkcija.  
+x Tip podataka. 
+ 
+21. Kako pristupate svojstvima objekta u PHP-u?
+Korištenje "." operator nakon kojeg slijedi naziv svojstva.  
+Upotrebom operatora "," nakon kojeg slijedi naziv svojstva.  
+Korištenje ";" operator nakon kojeg slijedi naziv svojstva.  
+x Korištenje operatora "->" iza kojeg slijedi naziv svojstva.  
+
+
+ 22. Može li se u istoj PHP datoteci definirati više imenskih prostora (namespace)?
+x Da, ali se ne preporučuje.  
+Ovisi o verziji PHP-a koja se koristi.  
+Samo ako prostori imena imaju različita imena.  
+Ne, PHP dopušta samo jedan prostor imena po datoteci.  
+
+
+23. Što je od sljedećeg ispravna sintaksa za povezivanje s MySQL bazom podataka koristeći mysqli u PHP-u?
+mysqli_connect("korisnik@localhost", "lozinka", "baza podataka");  
+mysqli_connect("localhost", "password", "user", "database");  
+x $conn = mysqli_connect("localhost", "user", "password", "database");  
+Ništa od navedenog.  
+
+
+24. Za zadani proceduralni kôd, napišite istovjetni kôd u objektno orijentiranom pristupu.
+Za rješavanje možete koristiti Visual Studio Code.
+
+
+Unesi odgovor
+
+
+25. Preuzmite datoteku s uputama i slijedite korake. Potrebno je pokrenuti Hyper-V Manager i spojiti se na virtualnu mašinu.
+
+
+Kreirajte datoteke pdo.php i mysqli.php. U mysqli.php datoteci se koristeći mysqli ekstenzije spojite na lokalnu bazu. Ako dođe do pogreške prilikom spajanja, ispisati grešku. U pdo.php datoteci postići isto samo koristeći PDO ekstenziju.
+
+
+Rješenje snimite kao .zip datoteku te ju učitajte na ispitnu platformu. Vendorske datoteke nije potrebno spremiti u .zip datoteku rješenja.
+
+
+Predviđeno vrijeme za rješavanje zadatka je 10 minuta. Spomenuto vrijeme neka Vam služi kao orijentir kako biste bili sigurni da ćete imati dovoljno vremena za ovaj, ali i za ostale zadatke.
+
+
+Preuzmi upute
+
+
+No file chosen
+Pohranjeno rješenje: mysqli_pdo.zip
+
+
+26. Preuzmite datoteku s uputama i slijedite korake. Potrebno je pokrenuti Hyper-V Manager i spojiti se na virtualnu mašinu.
+
+
+Instalirajte PHPUnit te koristeći PHPUnit konfiguracijsku datoteku podesite da se pokretanjem PHPUnit naredbe automatski provjere testovi u direktorij "testing".
+
+
+Nakon uspješne instalacije i konfiguracije, rješenje snimite kao .zip datoteku te ju učitajte na ispitnu platformu. Vendorske datoteke nije potrebno spremiti unutar .zip datoteke.
+
+
+Predviđeno vrijeme za rješavanje zadatka je 10 minuta. Spomenuto vrijeme neka Vam služi kao orijentir kako biste bili sigurni da ćete imati dovoljno vremena za ovaj, ali i za ostale zadatke.
+
+
+Preuzmi upute
+
+
+No file chosen
+
+
+Pohranjeno rješenje: phpunit.zip
+
+
+27. Što od sljedećeg NIJE način za prosljeđivanje podataka prikazu u Laravelu?
+x Funkcijom request().  
+Metodom with().  
+Funkcijom compact().  
+S nizom (array) podataka.  
+
+
+28. Koja je svrha "$fillable" svojstva u Laravel modelu?
+x Određivanje stupaca tablice baze podataka koji se mogu masovno dodijeliti.  
+Navođenje stupaca tablice baze podataka koji su potrebni.  
+Određivanje stupaca tablice baze podataka koji su samo za čitanje.  
+Određivanje stupaca tablice baze podataka koji su skriveni.  
+
+
+ 29. Koja je svrha CLICK metode u Laravel Dusku?
+Simulacija pomicanja web stranice prema dolje.  
+Simulacija lebdenja iznad elementa.  
+x Simulacija klika na gumb.  
+Simulacija upisivanja teksta u polje obrasca. 
+ 
+ 30. Koja se metoda koristi za dohvaćanje jednog zapisa iz tablice po primarnom ključu pomoću DB klase u Laravelu?
+x $user = DB::table('users')->find(1);  
+$user = DB::table('users')->first(1);  
+$user = DB::table('users')->get(1);  
+$user = DB::table('users')->all();  
+
+
+31. Za rješavanje zadatka, preuzmite upute i slijedite korake opisane u dokumentu. Potrebno je pokrenuti Hyper-V Manager i spojiti se na virtualnu mašinu.
+
+
+Rješenje zadatka je potrebno u .zip datoteci podići na ispitnu platformu. U zip datoteku nemojte uključiti vendorske datoteke.
+
+
+Predviđeno vrijeme za rješavanje zadatka je 30 minuta. Spomenuto vrijeme neka Vam služi kao orijentir kako biste bili sigurni da ćete imati dovoljno vremena za ovaj, ali i za ostale zadatke.
+
+
+Preuzmi upute
+
+
+No file chosen
+
+
+Pohranjeno rješenje: LaravelAuth.zip
+
+
+ 
